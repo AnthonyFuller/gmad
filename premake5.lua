@@ -41,10 +41,10 @@ solution "gMad"
 			targetname( "gMad_linux" )
 		end
 		
-		if os.is(  ) == "macosx" then
+		if os.host(  ) == "macosx" then
 			targetname( "gMad_osx" )
 		end
 
 		files { "src/**.*", "include/**.*" }
 
-	include "Bootil/projects/bootil_premake5.lua"
+	include "bootil/projects/bootil_premake5.lua"
