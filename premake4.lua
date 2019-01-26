@@ -1,23 +1,4 @@
 solution "GMad"
-
-	newoption {
-	   trigger     = "outdir",
-	   value       = "bin/",
-	   description = "Output directory"
-	}
-	
-	newoption {
-	   trigger     = "bootil_lib",
-	   value       = "lib/",
-	   description = "The folder containing the bootil lib"
-	}
-	
-	newoption {
-	   trigger     = "bootil_inc",
-	   value       = "include/",
-	   description = "The folder containing the bootil h"
-	}
-	
 	language "C++"
 	location ( "/" )
 	flags { "Symbols", "NoEditAndContinue", "NoPCH", "StaticRuntime", "EnableSSE" }
